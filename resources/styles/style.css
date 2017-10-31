@@ -1,3 +1,173 @@
+@font-face {
+  font-family: 'Merriweather Sans';
+  font-style: italic;
+  font-weight: 700;
+  src: local('Merriweather Sans Bold Italic'), local('MerriweatherSans-BoldItalic'), url(https://fonts.gstatic.com/s/merriweathersans/v9/nAqt4hiqwq3tzCecpgPmVafo0sDQ75c9ExQ-26lwTdA.woff2) format('woff2');
+  unicode-range: U+0000-00FF, U+0131, U+0152-0153, U+02C6, U+02DA, U+02DC, U+2000-206F, U+2074, U+20AC, U+2212, U+2215;
+}
+@font-face {
+  font-family: 'Merriweather Sans';
+  font-style: normal;
+  font-weight: 400;
+  src: local('Merriweather Sans'), local('MerriweatherSans-Regular'), url(https://fonts.gstatic.com/s/merriweathersans/v9/AKu1CjQ4qnV8MUltkAX3sMZ4HySTEWshgORbPp2tk8k.woff2) format('woff2');
+  unicode-range: U+0000-00FF, U+0131, U+0152-0153, U+02C6, U+02DA, U+02DC, U+2000-206F, U+2074, U+20AC, U+2212, U+2215;
+}
+@font-face {
+  font-family: 'Open Sans';
+  font-style: normal;
+  font-weight: 400;
+  src: local('Open Sans Regular'), local('OpenSans-Regular'), url(https://fonts.gstatic.com/s/opensans/v15/cJZKeOuBrn4kERxqtaUH3VtXRa8TVwTICgirnJhmVJw.woff2) format('woff2');
+  unicode-range: U+0000-00FF, U+0131, U+0152-0153, U+02C6, U+02DA, U+02DC, U+2000-206F, U+2074, U+20AC, U+2212, U+2215;
+}
 html {
-  font-size: 18px;
+  font-size: 16px;
+  font-family: 'Merriweather Sans','Open Sans', sans-serif;
+}
+body {
+  width: 100%;
+  margin-top: 4rem;
+}
+a {
+  text-decoration: none;
+}
+.header {
+  width: 100%;
+  display: flex;
+  align-items: center;
+  position: fixed;
+  top: 0;
+  left: 0;
+  background-color: white;
+}
+.lnav {
+  display: inline-flex;
+  align-items: center;
+  padding-left: 1rem;
+  height: 2rem;
+  line-height: 2rem;
+  width: 30%;
+}
+.rnav {
+  display: inline-flex;
+  justify-content: flex-end;
+  align-items: center;
+  padding-right: 1rem;
+  width: 70%;
+}
+#logo {
+  margin-left: 0.5rem;
+  height: 2rem;
+  vertical-align: middle;
+}
+#name {
+  font-weight: bold;
+}
+#name p {
+  vertical-align: middle;
+}
+#name span {
+  color: darkgrey;
+}
+.hband {
+  background-color: red;
+  width: 1rem;
+  height:4rem;
+}
+.banner {
+  display: flex;
+  justify-content: center;
+  background-color: grey;
+}
+.blok13 {
+  display: flex;
+  justify-content: center;
+  border: 2px solid red;
+}
+.blokMain {
+  display: inline-flex;
+  flex-direction: column;
+  width: 60%;
+  align-content: flex-start;
+  overflow: hidden;
+  margin: 2rem 1.5rem;
+}
+.blokMain img, video {
+  max-height: 28rem;
+  width: auto;
+  top: 0;
+  overflow: hide;
+}
+.bannerSide {
+  display: flex;
+  flex-direction: column;
+  width: 40%;
+  height: 28rem;
+  margin: 2rem 1.5rem;
+}
+.bannertext {
+display: flex;
+flex-direction: column;
+align-content: center;
+line-height: normal;
+margin-top: 5rem;
+}
+.btn {
+height: 1rem;
+width: 45%;
+color: white;
+font-weight: bold;
+text-align: center;
+background-color: darkblue;
+padding: 1rem;
+}
+.blokSide {
+  display: flex;
+  flex-direction: column;
+  width: 40%;
+  margin: 2rem 1.5rem;
+}
+.rside {
+  display: inline-flex;
+  flex-direction: row;
+  background-color: white;
+  max-height: 12rem;
+}
+.rside img {
+  width: 35%;
+  height: auto;
+  margin: 0 0.5rem 0.5rem 0.5rem;
+}
+.sidetext {
+  display: inline-flex;
+  flex-direction: column;
+  width: 65%;
+}
+.blok {
+  width: 100%;
+}
+.blok2 {
+  display: flex;
+  flex-wrap: wrap;
+  padding: 72px 32px;
+  background-color: lightgrey;
+}
+.blokSub {
+  width: 20rem;
+  background-color: white;
+  padding: 32px;
+  margin: 24px;
+}
+.blokSub img {
+  width: 20rem;
+  height: auto;
+}
+.footer {
+  display: inline-flex;
+  align-items: flex-start;
+  width: 100%;
+}
+.fband {
+  background-color: white;
+  width: 1rem;
+  height: auto;
 }
